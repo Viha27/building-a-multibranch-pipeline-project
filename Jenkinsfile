@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Cat README') {
             when {
-                branch "fix-*"
+                branch "dev-*"
             }
             steps {
                 echo "CAT README.md"
